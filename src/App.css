@@ -1,5 +1,48 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+    padding: 0;
+}
+
 .App {
   text-align: center;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: 700;
+  color: navy;
+  margin-top: 100px;
+}
+
+.card-text {
+  text-align: center;
+  color: navy;
+  margin: 0px 200px;
+  font-weight: 500;
+  font-size: large;
+}
+
+#cardN {
+  display: grid;
+}
+
+#cardN p {
+  float: right;
+  text-align: justify;
+}
+
+.team {
+  color: #000080;
+  font-size: 50px;
+  font-weight: bolder;
+  padding: 20px;
+  position: relative;
+  right: 800px;
+}
+
+.card-group {
+  padding: 0 20px 50px 20px;
 }
 
 .App-logo {
@@ -7,32 +50,303 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  font-weight: 900;
+  color: lightslategray;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.title1 {
+  font-weight: 700;
+  padding: 20px 0 0 0px;
+  /* padding:10px 0px 0px 5px; */
+  color: #000080;
+}
+
+.firstpg {
+  width: 1500px;
+  height: 490px;
+  position: relative;
+}
+
+
+#sub {
+  padding-top: 50px;
+
+}
+
+#sub2 {
+  padding-top: 45px;
+
+  position: relative;
+  left: 10px;
+}
+
+#sub2 button {
+  background-color: #000080;
+  border-color: #000080;
+  font-weight: bolder;
+}
+
+#sub button {
+  background-color: #000080;
+  border-color: #000080;
+  font-weight: bolder;
+}
+
+#updatebtn {
+  background-color: #000080;
+  border-color: #000080;
+}
+
+.add-btn {
+
+  padding: 0px 0px 0px 45px;
+  position: relative;
+  bottom: 2px;
+  /* z-index: -1; */
+}
+
+.add-btn .btn {
+  font-weight: 500;
+  background-color: #000080;
+  border-color: #000080;
+}
+
+.download-btn {
+  position: relative;
+  left: 200px;
+  bottom: 40px;
+  /* z-index: -1; */
+  /* padding: 0px 0px 0px 45px;
+top: 20px;  */
+}
+
+#carouselExampleControls {
+  margin: 0;
+  position: relative;
+  z-index: -1;
+}
+
+.download-btn .btn {
+  font-weight: 500;
+}
+
+
+.top h1 {
+  text-align: center;
+  padding: 20px;
+  font-weight: 700;
+
+  color: #000080;
+
+}
+
+.Emptable button {
+  font-weight: bolder;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.deptTable button {
+  font-weight: bolder;
+  margin-right: 10px;
+  margin-bottom: 20px;
+
+}
+
+.Table {
+  margin: 0px 30px 30px 30px;
+  width: 100%;
+}
+
+.empSelect {
+  color: gray;
+  border-radius: 5px;
+  padding: 6px 335px 6px 10px;
+  border-color: lightgray;
+
+}
+
+.empSelect1 {
+  color: gray;
+  border-radius: 5px;
+  padding: 6px 350px 6px 10px;
+  border-color: lightgray;
+
+}
+
+
+.navbar {
+  font-weight: bolder;
+}
+
+span {
+  color: navy;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+h3 {
+  color: navy;
+  padding: 10pxss;
+}
+
+li {
+  font-weight: bolder;
+}
+
+hr {
+  font-weight: bolder;
+}
+
+.col-sm {
+  text-align: center;
+  font-weight: 700;
+}
+
+.col :link {
+  text-decoration: none;
+}
+
+
+.main-footer {
+  background-image: linear-gradient(45deg, black, green);
+
+  margin:
+    20px 0px 0px 0px;
+}
+
+.col {
+  padding-top: 16px;
+
+}
+
+.col .list-unstyled {
+  padding: 10px;
+  font-weight: 400;
+color: white;
+}
+
+
+.col h4 {
+  font-weight: bold;
   color: white;
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* ------------------navbar------------------- */
+
+nav {
+  background-image: linear-gradient(45deg, black, green);
+  height: 80px;
+  width: 100%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  position: relative;
+  bottom: 20px;
+}
+
+nav ul {
+  float: right;
+
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+
+a.active,
+a:hover {
+  /* background: gray; */
+  transition: .5s;
+
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  nav ul li a {
+    font-size: 16px;
   }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: gray;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: white;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .hide{display: none;}
 }
