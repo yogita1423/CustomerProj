@@ -18,7 +18,7 @@ const Navbar = () => {
               <img className="logo" src={"./Godrej.png"} height="120px" alt="logo"></img>
             
       <ul>
-        <li><Link to="/" >
+        <li><Link to="/customer" >
                     Home
                   </Link></li>
         <li><Link to="/Customer">

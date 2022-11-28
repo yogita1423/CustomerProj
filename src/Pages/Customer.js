@@ -38,9 +38,9 @@ const Customer = () => {
     getdata();
   }, []);
 
-  const deleteuser = async (EmployeeID) => {
+  const deleteuser = async (CustomerID) => {
     const res2 = await fetch(
-      `https://7bctswkz46.execute-api.us-east-1.amazonaws.com/employee/${EmployeeID}`,
+      `https://4uvo376113.execute-api.us-east-1.amazonaws.com/customer/${CustomerID}`,
       {
         method: "DELETE",
         headers: {
@@ -81,9 +81,9 @@ const Customer = () => {
           </CSVLink>
         </div>
       </section>
-      <div className="Table">
+      <div class="table-responsive">
         <div className="container-fluid ">
-          <table class="table table-lights table-striped">
+          <table class="table table-lights">
             <thead>
               <tr className="Emptable">
                 <th scope="col">Sr No</th>
@@ -112,23 +112,17 @@ const Customer = () => {
                       <td className="hide">{element.DateOfDelivery}</td>
 
                       <td className="d-flex justify-content-between ">
-                        <Link to="/view:id">
+                        <Link to="/customer">
                           <button className="btn btn-success">
                             <i class="fa-regular fa-eye"></i>
                             <br />
                             View
                           </button>
                         </Link>
-                        <Link to="/Edit">
-                          <button className="btn btn-primary" id="updatebtn">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            <br />
-                            Update
-                          </button>
-                        </Link>
+
                         <button
                           className="btn btn-danger"
-                          onClick={() => deleteuser(element.EmployeeID)}
+                          onClick={() => deleteuser(element.CustomerID)}
                         >
                           <i class="fa-solid fa-trash"></i>
                           <br />

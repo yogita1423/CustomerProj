@@ -51,6 +51,7 @@
 }
 
 label {
+  font-size: 20px;
   font-weight: 900;
   color: lightslategray;
   padding: 10px;
@@ -60,7 +61,7 @@ label {
   font-weight: 700;
   padding: 20px 0 0 0px;
   /* padding:10px 0px 0px 5px; */
-  color: #000080;
+  color: gray;
 }
 
 .firstpg {
@@ -72,7 +73,10 @@ label {
 
 #sub {
   padding-top: 50px;
-
+}
+th{
+  font-size: 18px;
+  font-weight: 900;
 }
 
 #sub2 {
@@ -80,17 +84,20 @@ label {
 
   position: relative;
   left: 10px;
+  
 }
 
 #sub2 button {
-  background-color: #000080;
-  border-color: #000080;
+  background-image: linear-gradient(45deg, lightgray,
+        black);
+    border-color: white;
   font-weight: bolder;
 }
 
 #sub button {
-  background-color: #000080;
-  border-color: #000080;
+background-image: linear-gradient(45deg, lightgray,
+      black);
+  border-color: white;
   font-weight: bolder;
 }
 
@@ -138,14 +145,18 @@ top: 20px;  */
   padding: 20px;
   font-weight: 700;
 
-  color: #000080;
+  color: gray;
 
 }
-
+.Emptable td{
+  color: gray;
+  font-weight: 900;
+}
 .Emptable button {
   font-weight: bolder;
   margin-right: 10px;
   margin-bottom: 20px;
+  
 }
 
 .deptTable button {
@@ -189,7 +200,7 @@ span {
 
 h3 {
   color: navy;
-  padding: 10pxss;
+  padding: 10px;
 }
 
 li {
