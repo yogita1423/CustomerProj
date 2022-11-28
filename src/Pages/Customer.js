@@ -70,7 +70,7 @@ const Customer = () => {
           </h1>
         </div>
         <div className="add-btn">
-          <Link to="/Register" class="btn btn-primary">
+          <Link to="/customerInfo" class="btn btn-primary">
             ADD DATA &nbsp;
             <i class="fa-solid fa-plus"></i>
           </Link>
@@ -83,7 +83,7 @@ const Customer = () => {
       </section>
       <div className="Table">
         <div className="container-fluid ">
-          <table class="table table-dark table-striped">
+          <table class="table table-lights table-striped">
             <thead>
               <tr className="Emptable">
                 <th scope="col">Sr No</th>
@@ -114,12 +114,15 @@ const Customer = () => {
                       <td className="d-flex justify-content-between ">
                         <Link to="/view:id">
                           <button className="btn btn-success">
-                            <i class="fa-regular fa-eye"></i>View
+                            <i class="fa-regular fa-eye"></i>
+                            <br />
+                            View
                           </button>
                         </Link>
                         <Link to="/Edit">
                           <button className="btn btn-primary" id="updatebtn">
                             <i class="fa-solid fa-pen-to-square"></i>
+                            <br />
                             Update
                           </button>
                         </Link>
@@ -127,7 +130,9 @@ const Customer = () => {
                           className="btn btn-danger"
                           onClick={() => deleteuser(element.EmployeeID)}
                         >
-                          <i class="fa-solid fa-trash"></i>Delete
+                          <i class="fa-solid fa-trash"></i>
+                          <br />
+                          Delete
                         </button>
                       </td>
                     </tr>
@@ -139,7 +144,7 @@ const Customer = () => {
         </div>
       </div>
       <br />
-      <Table responsive>
+      {/* <Table responsive>
         <thead>
           <tr>
             <th>#</th>
@@ -168,7 +173,7 @@ const Customer = () => {
             ))}
           </tr>
         </tbody>
-      </Table>
+      </Table> */}
       <Footer />
     </>
   );
